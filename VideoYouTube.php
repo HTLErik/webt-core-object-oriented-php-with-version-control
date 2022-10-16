@@ -5,7 +5,7 @@ require_once 'Video.php';
 class VideoYouTube extends Video
 {
 
-    public function __construct($name, $source)
+    public function __construct($source, $name)
     {
         $videoId = explode('=', $source);
         $videoId = end($videoId);
@@ -19,8 +19,8 @@ class VideoYouTube extends Video
     <br>
     <p class="text-center text-xl font-bold">'.$name.'</p>
     <br>';
-        parent::__construct($name, $source, $embedHtml);
-
+        parent::__construct($source, $embedHtml, $name);
+        
     }
 }
 ?>

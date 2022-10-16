@@ -20,7 +20,7 @@ class VideoYouTube extends Video
     <p class="text-center text-xl font-bold">'.$name.'</p>
     <br>';
         parent::__construct($name, $source, $embedHtml);
-        
+
     }
 }
 ?>

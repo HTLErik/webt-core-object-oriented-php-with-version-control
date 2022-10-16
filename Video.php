@@ -8,7 +8,7 @@ abstract class Video implements VideoInterface
     private $embedHtml;
     private $name;
    
-    public function __construct($name, $source, $embedHtml)
+    public function __construct($source, $embedHtml, $name)
     {
         $this->source = $source;
         $this->embedHtml = $embedHtml;
